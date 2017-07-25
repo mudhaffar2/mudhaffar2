@@ -12,7 +12,7 @@
 
 /*styling the header and its contents*/
 
-#header {
+header {
   width:100%;
   height:420px;
   background: url(img/headbgimg.jpg);
@@ -69,21 +69,32 @@ h1, h4 {
   cursor: pointer;
 }
 
+header #mypic {
+  position:absolute;
+  margin:0 auto;
+  top:320px;
+  width:200px;
+  height:200px;
+  border:1px solid black;
+  border-radius: 50%;
+}
+
 /*styling first section and its contents*/
 
 #about-section {
   position:relative;
+  margin-top: 100px;
   width:100%;
   height:500px;
-  background-color: grey;
+  border:1px solid black;
+  overflow: hidden;
 }
 
 .slide {
   position:absolute;
   width:80%;
   height:500px;
-  background-color: white;
-  border:1px solid black;
+  background-color: #666666;
   margin-left: 10%;
 }
 
@@ -94,13 +105,31 @@ h1, h4 {
   flex-wrap: wrap;
   width:100%;
   height:600px;
+  margin-top: 100px;
 }
 
 .skill-div {
   display:inline-flex;
+  flex-direction: column;
   width:33.33%;
   height:50%;
   border:1px solid black;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-div img {
+  height:80%;
+}
+
+.skill-div h2 {
+  height:20%;
+}
+
+.skill-div h3 {
+  height:80%;
+  text-align: center;
+  line-height: 800%;
 }
 
 /*styling third section and its contents*/
@@ -109,6 +138,7 @@ h1, h4 {
   display:flex;
   width :100%;
   height:400px;
+  margin-top: 100px;
 }
 
 .add-con-div {
@@ -121,6 +151,7 @@ h1, h4 {
 
 #address p {
   display:flex;
+  font-size: 1.5em;
 }
 
 #address {
@@ -128,17 +159,14 @@ h1, h4 {
   justify-content: space-around;
 }
 
-form * {
-  vertical-align: middle;
-}
-
 /*styling the footer and its contents*/
 
-#footer {
+footer {
   width:100%;
-  height:20px;
+  height:25px;
   background-color: #66a3ff;
   text-align: center;
+  margin-top: 100px;
 }
 
 

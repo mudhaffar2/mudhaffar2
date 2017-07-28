@@ -31,7 +31,6 @@ header {
   position: fixed;
   top:5%;
   left:10%;
-  height:20vh;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,6 +39,10 @@ header {
   z-index: 10;
   background-color: rgba(0,0,0,0.3);
   padding:1%;
+}
+
+#nav-menu li {
+  margin-top:5px;
 }
 
 #nav-menu a {
